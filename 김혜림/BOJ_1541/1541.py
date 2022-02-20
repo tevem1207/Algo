@@ -12,13 +12,13 @@ for _ in range(3):
         for num in formula[0].split('+'):
             result += int(num)
     
-    else:            
+    else:
+        for num in formula[0].split('+'):
+            result += int(num)
+        
         for nums in formula[1::]:
             num = nums.split('+')
             for n in num:
                 result -= int(n)   
                 
-        for num in formula[0].split('+'):
-            result += int(num)
-    
     print(result)
