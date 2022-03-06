@@ -26,7 +26,5 @@ for _ in range(M):
             else:
                 print(0)
         else:
-            if N in S:
-                S ^= {N}
-            else:
-                S |= {N}
+            S ^= {N}
+
