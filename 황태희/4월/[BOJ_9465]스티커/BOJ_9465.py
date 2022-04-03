@@ -14,6 +14,6 @@ for tc in range(T):
         dp[1][i] = max(dp[0][i - 1], dp[0][i - 2]) + matrix[1][i]
 
     if N == 1:
-        print(max(matrix[0][1], matrix[0][0]))
+        print(max(matrix[0][1], matrix[1][1]))
     else:
         print(max(dp[0][-1], dp[1][-1]))
