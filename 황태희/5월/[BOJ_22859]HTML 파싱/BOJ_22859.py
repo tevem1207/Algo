@@ -14,7 +14,6 @@ while i < len(html):
                 while html[i] != '"':
                     tmp += html[i]
                     i += 1
-                tmp = tmp.strip()
                 print(tmp)
                 tmp = ''
             i += 1
